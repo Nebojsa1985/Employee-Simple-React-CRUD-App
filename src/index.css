@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Londrina Outline', cursive;
+}
+
+body {
+  background-image: url(./img/mainwall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0;
+  min-height:1200px;
+}
+
+.tabela {
+  margin: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table, tr {
+  padding: 7px;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 1rem;
+  background: #e2e2e7;
+  border: 1px solid black;
+  width: 10vw;
+}
+
+td {
+  padding: 0.4rem;
+  background: aqua;
+  border: 1px solid black;
+}
+
+.addForm{
+  margin-top: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width: 80%;  
+  border: 3px solid black;
+  border-radius: 14px; 
+  background-image: url(./img/brownwall.jpg);
+  top: -110px;
+}
+
+.closeAddMenu{
+  margin: 4px;
+  position: relative; 
+  font-weight: bolder;
+  align-self: end;
+}
+
+.closeAddMenu:hover{
+  color: rgb(217, 61, 61);
+  cursor: pointer;  
+  scale: 1.5;
+}
+
+.addInputs {
+  margin: 2px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 14px;
+  background-color: blanchedalmond;
+}
+
+.addButton {
+  width: 70%;
+  padding: 20px;
+  margin: 2px;
+  border-radius: 14px;
+  background-color: rgb(155, 123, 75);
+}
+
+.addButton:hover {
+  background-color: rgb(187, 156, 110);
+}
+
+button {
+  width: 99.9%;
+  cursor: pointer;
+  background-color: rgb(113, 183, 189);
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 2px;
+  margin: 1px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.755);
+  background-image: url(./img/whitewall.jpg);
+}
+
+button:active {
+  transform: translate(1px, 1px);
+}
+button:hover {
+  background-color: rgb(142, 201, 206);
+  background-image: url(./img/whitebrickwall.jpg);  
+}
+
+input {
+  border-radius: 8px;
+  padding: 0 12px 0 12px;
+  outline: none;
+  margin: 1px;  
+  background-image: url(./img/whitewall.jpg);
+}
+
+.empTable {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.empDelTable {
+  display: none;
+  grid-template-columns: auto auto auto auto;
+ }
+
+.readEmpCard , .editEmpCard , .deletedEmpCard { 
+  border-radius: 10px;
+  margin: 10px;
+  width: 20vw;
+  height: fit-content;
+  padding: 20px;  
+  text-align: left; 
+  font-size: 17px;
+  background-color:rgb(143, 197, 197);
+  background-image: url(./img/bluewall.jpg);
+}
+
+span {
+  color: rgb(255, 246, 246);
+  font-size: 17px;
+}
+
+.editInputs {
+  width: 90%;
+}
+
+@media screen and (max-width: 420px) {
+  .empTable , .empDelTable{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: auto;
+  }
+  .readEmpCard , .editEmpCard , .deletedEmpCard  {
+    width: 82vw;
+  }
+  .addForm{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-width: 421px) {
+  .empTable , .empDelTable {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: auto;
+  }
+  .readEmpCard , .editEmpCard , .deletedEmpCard  {
+    width: 82vw;
+  }
+  .addForm{
+    margin-top: 10px;
+  }
+}
