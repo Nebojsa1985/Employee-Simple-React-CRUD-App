@@ -72,6 +72,7 @@ td {
   padding: 20px;
   border-radius: 14px;
   background-color: blanchedalmond;
+  font-weight: bolder;
 }
 
 .addButton {
@@ -80,6 +81,7 @@ td {
   margin: 2px;
   border-radius: 14px;
   background-color: rgb(155, 123, 75);
+  font-weight: bolder;
 }
 
 .addButton:hover {
@@ -133,7 +135,7 @@ input {
   height: fit-content;
   padding: 20px;  
   text-align: left; 
-  font-size: 17px;
+  font-size: 18px;
   background-color:rgb(143, 197, 197);
   background-image: url(./img/bluewall.jpg);
 }
@@ -145,13 +147,13 @@ span {
 
 .editInputs {
   width: 90%;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 420px) {
   .empTable , .empDelTable{
-    display: flex;
-    justify-content: center;
     grid-template-columns: auto;
+    justify-items: center;
   }
   .readEmpCard , .editEmpCard , .deletedEmpCard  {
     width: 82vw;
@@ -163,9 +165,8 @@ span {
 
 @media screen and (max-width: 920px) and (min-width: 421px) {
   .empTable , .empDelTable {
-    display: flex;
-    justify-content: center;
     grid-template-columns: auto;
+    justify-items: center;
   }
   .readEmpCard , .editEmpCard , .deletedEmpCard  {
     width: 82vw;
